@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* OWN CSS */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(244, 244, 244);
+  color: rgb(65, 75, 60);
+  font-family: 'Bitter', serif;
+  padding: 32px;
+}
+.container {
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 6px;
+  box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
+  margin: 16px 8px;
+  padding: 16px;
+  background-color: white;
+
+  /* If you change your mind */
+  /* border: 1px solid rgb(210, 210, 210);
+  border-radius: 4px;
+  box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
+  padding: 32px;
+  background-color: white;
+  margin-bottom: 24px; */
+}
+.container.form {
+  display: flex;
+  align-items: baseline;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+
+}.form-group {
+  padding: 0 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+}.submit {
+  flex: 2;
+  align-items: center;
+}.inputs {
+  flex: 2;
+}.checkboxes {
+  flex: 1;
+}
+
+a {
+  font-size: 0.75em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+h1, h2, h3, h4 {
+  color: green;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+form h2 h4{
+  color: darkblue;
+}
+
+label {
+  display: flex;
+  margin: auto;
+  margin-bottom: 0.25rem;
+  justify-content: space-between;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}
+input[type=text], select {
+  height: 1.5rem;
+}
+
+button {
+  height: 2rem;
+  width: 6rem;
+  border-radius: 8px;
+  color: rgb(30, 220, 20);
+  background-color: white;
+  border: 2px solid rgb(30, 220, 20);
+}:hover {
+  cursor: pointer;
+}:disabled {
+  color: crimson;
+  background-color: white;
+  border: 2px solid crimson;
+  cursor: not-allowed;
+}
+
+.user {
+
+}
+
+.user h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.user p {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.errors {
+  margin: 8px;
+  font-size: 0.7em;
+  color: red;
+
+}div {
+  display: block;
+  margin-top: 4px;
+}

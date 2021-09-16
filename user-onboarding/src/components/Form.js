@@ -63,7 +63,7 @@ export default function FormData(props){
                     </label>
                 </div>
 
-                <button disabled={disabled}>Sign Up</button>
+                <button id='submitBtn' disabled={disabled}>Sign Up</button>
             </div>
         </form>
     )
